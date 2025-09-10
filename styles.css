@@ -481,10 +481,241 @@ button {
     gap: 40px;
 }
 
+.choose-features-container{
+    width: 1181px;
+    height: 422px;
+}
+
 .choose-features{
     width: 624px;
     height: 265px;
     display: flex;
     flex-direction: column;
     gap: 40px
+}
+
+.feature-item{
+    width: 624px;
+    height: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials-section{
+    width: 1320px;
+    height: 479px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial-card-container{
+    width: 1320px;
+    height: 398px;
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+}
+
+.testimonial-card{
+    width: 224px;
+    height: 398px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.testimonial-image{
+    width: 224px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.testimonial-content{
+    width: 224px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: auto;
+}
+
+.testimonial-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial-name{
+    font-size: 14px;
+    font-weight: semi-bold;
+    color: #1A1A1A;
+    text-align: left;
+    vertical-align: top;
+}
+
+.testimonial-treatment{
+    font-size: 14px;
+    font-weight: semi-bold;
+    line-height: auto;
+    color: #F58420;
+    text-align: left;
+    vertical-align: top;
+}
+
+.testimonial-city{
+    font-size: 14px;
+    font-weight: semi-bold;
+    line-height: auto;
+    color: #777777;
+    text-align: left;
+    vertical-align: top;
+}
+
+.testimonial-card-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.consultation-section{
+    width: 1320px;
+    height: 189px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 12px;
+    gap: 20px;
+    background-color: #FFF9F4;
+}
+
+.consulation-form{
+    width: 1296px;
+    height: 106px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.consultation-form-inputs{
+    width: 1296px;
+    height: 44px;
+    display: flex;
+    gap: 24px;
+}
+
+.consultation-form-input{
+    width: 416px;
+    height: 38px;
+    padding: 17px 16px;
+    border-radius: 24px;
+    border: 1px solid #FFE0C4;
+    box-shadow: inset 0 0 0 #FFE0C4;
+    color: #777777;
+    font-size: 14px;
+    font-weight: regular;
+    line-height: auto;
+    text-align: left;
+    vertical-align: top;
+}
+
+.consultation-form-details{
+    width: 1296px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+
+}
+
+.agreement-text{
+    font-size: 12px;
+    font-weight: regular;
+    line-height: 130%;
+    color: #1A1A1A;
+    vertical-align: top;
+    text-align: right;
+}
+
+.captcha-container{
+    display: flex;
+    align-items: center;
+}
+
+.captcha-input{
+    width: 306px;
+    height: 38px;
+    padding: 17px 16px;
+    border-radius: 24px 0 0 24px !important;
+    border: 1px solid #FFE0C4;
+    box-shadow: inset 0 0 0 #FFE0C4;
+    color: #777777;
+    font-size: 14px;
+    font-weight: regular;
+    line-height: auto;
+    text-align: left;
+    vertical-align: top;
+}
+
+.captcha{
+    width: 110px;
+    height: 38px;
+    border-radius: 0 24px 24px 0;
+    background-color: #462512;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: center;
+    font-size: 14px;
+    font-weight: regular;
+    line-height: auto;
+    padding: 10px 16px;
+}
+
+footer{
+    width: 100%;
+    height: 149px;
+    background-color: #462512;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    width: 91.67vw;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: auto;
+    color: #FFFFFF;
+}
+
+.footer-logo{
+    width: 174px;
+    height: 69px;
+}
+
+.footer-sections{
+    width: 837px;
+    height: 69px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-section {
+    display: flex;
+    gap: 27px;
+    justify-content: flex-end;
+    
+}
+
+.footer-link{
+    font-size: 16px;
+    font-weight: regular;
+    line-height: 150%
+}
+
+.copyright{
+    font-size: 14px;
+    font-weight: regular;
+    line-height: 150%;
+    text-align: right;
 }
