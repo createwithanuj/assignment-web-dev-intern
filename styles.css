@@ -1,10 +1,31 @@
 
+:root {
+    --color-primary: #F8943F;
+    --color-primary-dark: #DE6F0D;
+    --color-accent: #F58420;
+    --color-bg-light: #FFFAF5;
+    --color-bg-lighter: #FFF9F4;
+    --color-bg-footer: #462512;
+    --color-border-light: #FFE0C4;
+    --color-text-dark: #1a1a1a;
+    --color-text-medium: #474747;
+    --color-text-light: #fff;
+    --color-text-accent: #F58420;
+    --color-text-muted: #777777;
+    --color-text-footer: #FFFFFF;
+    --color-text-banner: #303030;
+    --color-text-banner-secondary: #4E4E4E;
+    --border-radius-main: 50px;
+    --border-radius-card: 24px;
+    --border-radius-img: 20px;
+    --font-main: 'Figtree', sans-serif;
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Figtree', sans-serif;
+    font-family: var(--font-main);
 }
 
 main {
@@ -18,7 +39,7 @@ main {
 .nav-bar {
     height: 70px;
     width: 100%;
-    background: #FFFAF5;
+    background: var(--color-bg-light);
     justify-self: space-between;
 }
 
@@ -43,7 +64,7 @@ main {
 }
 
 button {
-    border-radius: 50px;
+    border-radius: var(--border-radius-main);
     height: 38px;
     display: flex;
     align-items: center;
@@ -54,9 +75,9 @@ button {
 .appointment-button {
     width: 200px;
     height: 38px;
-    background: #F8943F;
-    border: 1px solid #DE6F0D;
-    color: #fff;
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary-dark);
+    color: var(--color-text-light);
     font-size: 16px;
     font-weight: semi-bold;
 }
@@ -64,17 +85,14 @@ button {
 .callback-button {
     width: 154px;
     height: 38px;
-    background: #fff;
-    border: 1px solid #462512;
-    color: #1a1a1a;
+    background: var(--color-text-light);
+    border: 1px solid var(--color-bg-footer);
+    color: var(--color-text-dark);
     font-size: 16px;
     font-weight: semi-bold;
 }
 
-.appointment-button img {
-    width: 19px;
-    height: 21px;
-}
+.appointment-button img,
 .callback-button img {
     width: 19px;
     height: 21px;
@@ -101,7 +119,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
 }
 
 .banner-text {
@@ -118,7 +135,7 @@ button {
     font-size: 16px;
     font-weight: extra-bold;
     line-height: 110%;
-    color: #303030;
+    color: var(--color-text-banner);
 }
 
 .banner-text p{
@@ -126,13 +143,12 @@ button {
     font-size: 16px;
     font-weight: semi-bold;
     line-height: 130%;
-    color: #4E4E4E;
+    color: var(--color-text-banner-secondary);
 }
 
 .banner-container button {
-
-    background-color: #F8943F;
-    box-shadow: inset 0 0 0 #DE6F0D;
+    background-color: var(--color-primary);
+    box-shadow: inset 0 0 0 var(--color-primary-dark);
 }
 
 .banner-image {
@@ -146,12 +162,12 @@ button {
 .appointment-section {
     width: 473px;
     padding: 24px 40px;
-    background: #FFF9F4;
+    background: var(--color-bg-lighter);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid 1px #FFE0C4;
-    box-shadow: inset 0 0 0 #FFE0C4;
+    border: solid 1px var(--color-border-light);
+    box-shadow: inset 0 0 0 var(--color-border-light);
 }
 
 .appointment-form {
@@ -196,15 +212,15 @@ button {
     height: 38px;
     padding: 14px 16px;
     border-radius: 24px;
-    border: 1px solid #FFE0C4;
-    box-shadow: inset 0 0 0 #FFE0C4;
+    border: 1px solid var(--color-border-light);
+    box-shadow: inset 0 0 0 var(--color-border-light);
 }
 
 .consent-text{
     font-size: 12px;
     font-weight: regular;
     line-height: 130%;
-    color: #303030;
+    color: var(--color-text-banner);
     vertical-align: top;
 }
 
@@ -215,7 +231,7 @@ button {
 .stats-banner {
     width: 100%;
     height: 60px;
-    background: #FFF9F4;
+    background: var(--color-bg-lighter);
     display: flex;
     align-content: center;
     overflow: hidden;
@@ -239,7 +255,6 @@ button {
     width: 192.23px;
     white-space: nowrap;
 }
-    
 
 .stat-icon {
     width: 41.3px;
@@ -255,14 +270,13 @@ button {
 }
 
 .stat-number {
-    color: #F58420;
+    color: var(--color-accent);
 }
 
 @keyframes marquee-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
-
 
 .root-canal-section {
     width: 1320px;
@@ -271,7 +285,6 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    
 }
 
 .section-header {
@@ -284,14 +297,14 @@ button {
 .section-header h2{
     font-size: 24px;
     font-weight: bold;
-    color: #1a1a1a;
+    color: var(--color-text-dark);
     text-align: center;
 }
 
 .section-header p{
     font-size: 20px;
     font-weight: regular;
-    color: #474747;
+    color: var(--color-text-medium);
     text-align: center;
 }
 
@@ -299,23 +312,22 @@ button {
     display: flex;
     justify-content: space-between;
     height: 332px;
-    border-radius: 24px;
+    border-radius: var(--border-radius-card);
     gap: 20px;
-    
 }
 
 .treatment-card{
     width: 640px;
     height: 332px;
     display: flex;
-    border: solid 1px #FFE0C4;
-    border-radius: 24px
+    border: solid 1px var(--color-border-light);
+    border-radius: var(--border-radius-card)
 }
 
 .treatment-image img{
     width: 320px;
     height: 332px;
-    border-radius: 24px 0 0 24px;
+    border-radius: var(--border-radius-card) 0 0 var(--border-radius-card);
 }
 
 .treatment-details {
@@ -344,7 +356,7 @@ button {
     font-size: 16px;
     font-weight: regular;
     line-height: 130%;
-    color: #474747;
+    color: var(--color-text-medium);
 }
 
 .treatment-types {
@@ -364,7 +376,7 @@ button {
     font-size: 16px;
     font-weight: regular;
     line-height: 130%;
-    color: #474747;
+    color: var(--color-text-medium);
     padding-left: 20px;
     width: 289px;
     white-space: nowrap;
@@ -389,7 +401,7 @@ button {
     font-size: 14px;
     font-weight: semi-bold;
     line-height: 130%;
-    color: #F58420;
+    color: var(--color-accent);
     text-align: left;
     vertical-align: top;
 }
@@ -405,16 +417,16 @@ button {
 .price-button button{
     width: 181px;
     height: 38px;
-    background-color: #F58420;
-    color: #FFFFFF;
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
     padding: 8px 20px;
-    border-radius: 50px;
+    border-radius: var(--border-radius-main);
     font-size: 14px;
     font-weight: semi-bold;
     text-align: left;
     vertical-align: top;
-    border: 1px solid #DE6F0D;
-    box-shadow: inset 0 0 0 #DE6F0D;
+    border: 1px solid var(--color-primary-dark);
+    box-shadow: inset 0 0 0 var(--color-primary-dark);
 }
 
 .implant-transformations{
@@ -444,7 +456,7 @@ button {
 .patient-image {
     width: 295px;
     height: 168px;
-    border-radius: 20px;
+    border-radius: var(--border-radius-img);
     overflow: hidden;
 }
 
@@ -459,7 +471,7 @@ button {
     font-size: 16px;
     font-weight: bold;
     line-height: auto;
-    color: #1A1A1A;
+    color: var(--color-text-dark);
     text-align: left;
     vertical-align: top;
 }
@@ -468,7 +480,7 @@ button {
     font-size: 14px;
     font-weight: semi-bold;
     line-height: auto;
-    color: #F58420;
+    color: var(--color-accent);
     text-align: left;
     vertical-align: top;
 }
@@ -547,7 +559,7 @@ button {
 .testimonial-name{
     font-size: 14px;
     font-weight: semi-bold;
-    color: #1A1A1A;
+    color: var(--color-text-dark);
     text-align: left;
     vertical-align: top;
 }
@@ -556,7 +568,7 @@ button {
     font-size: 14px;
     font-weight: semi-bold;
     line-height: auto;
-    color: #F58420;
+    color: var(--color-accent);
     text-align: left;
     vertical-align: top;
 }
@@ -565,7 +577,7 @@ button {
     font-size: 14px;
     font-weight: semi-bold;
     line-height: auto;
-    color: #777777;
+    color: var(--color-text-muted);
     text-align: left;
     vertical-align: top;
 }
@@ -581,7 +593,7 @@ button {
     flex-direction: column;
     padding: 16px 12px;
     gap: 20px;
-    background-color: #FFF9F4;
+    background-color: var(--color-bg-lighter);
 }
 
 .consulation-form{
@@ -605,9 +617,9 @@ button {
     height: 38px;
     padding: 17px 16px;
     border-radius: 24px;
-    border: 1px solid #FFE0C4;
-    box-shadow: inset 0 0 0 #FFE0C4;
-    color: #777777;
+    border: 1px solid var(--color-border-light);
+    box-shadow: inset 0 0 0 var(--color-border-light);
+    color: var(--color-text-muted);
     font-size: 14px;
     font-weight: regular;
     line-height: auto;
@@ -622,14 +634,13 @@ button {
     align-items: center;
     justify-content: flex-end;
     gap: 8px;
-
 }
 
 .agreement-text{
     font-size: 12px;
     font-weight: regular;
     line-height: 130%;
-    color: #1A1A1A;
+    color: var(--color-text-dark);
     vertical-align: top;
     text-align: right;
 }
@@ -644,9 +655,9 @@ button {
     height: 38px;
     padding: 17px 16px;
     border-radius: 24px 0 0 24px !important;
-    border: 1px solid #FFE0C4;
-    box-shadow: inset 0 0 0 #FFE0C4;
-    color: #777777;
+    border: 1px solid var(--color-border-light);
+    box-shadow: inset 0 0 0 var(--color-border-light);
+    color: var(--color-text-muted);
     font-size: 14px;
     font-weight: regular;
     line-height: auto;
@@ -658,8 +669,8 @@ button {
     width: 110px;
     height: 38px;
     border-radius: 0 24px 24px 0;
-    background-color: #462512;
-    color: #FFFFFF;
+    background-color: var(--color-bg-footer);
+    color: var(--color-text-footer);
     text-align: center;
     vertical-align: center;
     font-size: 14px;
@@ -671,7 +682,7 @@ button {
 footer{
     width: 100%;
     height: 149px;
-    background-color: #462512;
+    background-color: var(--color-bg-footer);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -684,7 +695,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     gap: auto;
-    color: #FFFFFF;
+    color: var(--color-text-footer);
 }
 
 .footer-logo{
@@ -704,7 +715,6 @@ footer{
     display: flex;
     gap: 27px;
     justify-content: flex-end;
-    
 }
 
 .footer-link{
