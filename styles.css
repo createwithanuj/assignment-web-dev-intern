@@ -36,6 +36,7 @@ main {
     gap: 40px;
 }
 
+
 .nav-bar {
     height: 70px;
     width: 100%;
@@ -496,6 +497,8 @@ button {
 .choose-features-container{
     width: 1181px;
     height: 422px;
+    display: flex;
+    gap: 73px;
 }
 
 .choose-features{
@@ -511,6 +514,12 @@ button {
     height: 16px;
     display: flex;
     justify-content: space-between;
+}
+
+.choose-feature-image-container{
+    width: 461px;
+    height: 422px;
+    border-radius: var(--border-radius-img);
 }
 
 .testimonials-section{
@@ -679,6 +688,15 @@ button {
     padding: 10px 16px;
 }
 
+button {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  background: var(--color-primary-dark);
+  color: var(--color-text-light);
+}
+
 footer{
     width: 100%;
     height: 149px;
@@ -686,6 +704,17 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+button:focus, input:focus {
+outline: 2px solid var(--color-accent);
+outline-offset: -2px;
+}
+
+
+.treatment-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    border-color: var(--color-primary);
 }
 
 .footer{
@@ -728,4 +757,9 @@ footer{
     font-weight: regular;
     line-height: 150%;
     text-align: right;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-bg-footer);
 }
