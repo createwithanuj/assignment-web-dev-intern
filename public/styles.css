@@ -113,7 +113,7 @@ button {
 .banner-section {
     width: 100vw;
     height: 450px;
-    background-image: url('public/hero-background.png');
+    background-image: url('assets/hero-background.png');
     background-size: cover;
 }
 
