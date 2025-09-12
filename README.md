@@ -9,6 +9,10 @@ A responsive and interactive assignment website built using HTML, CSS, and vanil
 - Clean, semantic HTML structure
 - Custom CSS for modern styling
 
+ ## Live Demo
+
+[View the live site here](https://assignment.anujkumargautam.in/)
+
 ## Getting Started
 
 1. **Clone the repository:**
