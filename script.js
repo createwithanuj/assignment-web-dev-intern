@@ -40,6 +40,20 @@ appointButtonsNotInForm.forEach(btn => {
     });
 });
 
+
+appointButtonsNotInForm.forEach(btn => {
+    btn.addEventListener('click', (event) => {
+        if (window.innerWidth < 1024) {
+            const form = document.querySelector('.form-for-mobile');
+        if (form) {
+            form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            const nameInput = form.querySelector('[name="name"]');
+            if (nameInput) nameInput.focus();
+        }
+        }
+    });
+});
+
 // Callback button: initiate phone call
 const callbackButton = document.getElementById('callbackButton');
 if (callbackButton) {
