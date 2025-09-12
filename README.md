@@ -1,5 +1,3 @@
-# assignment-web-dev-intern
-
 # Assignment Web Dev Intern
 
 A responsive and interactive assignment website built using HTML, CSS, and vanilla JavaScript. This project demonstrates fundamental web development skills without using frameworks or libraries.
