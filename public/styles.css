@@ -999,6 +999,11 @@ a{
         width: 100%;
     }
 
+    .consultation-form .agreement-text{
+        text-align: center;
+        font-size: 12px;
+        vertical-align: top;
+    }
     
 
 }
