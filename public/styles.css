@@ -939,83 +939,92 @@ a{
 }
 
 
-@media (max-width: 810px){
-    .appointment-form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 860px){
+
     .consultation-section{
-        display: flex;  
         flex-direction: column;
         align-items: center;
-        height: auto;
+        justify-content: space-evenly;
+        gap: 10px;
     }
 
-    *{
-        line-height: 140%;
-    }
+    
     .consultation-form-inputs{
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
-
+    
+    .consultation-form-inputs{
+        width: 70vw;
+    }
+    
     .consultation-form-input{
         width: 70vw;
     }
 
-    .consultation-form-inputs .captcha-container{
+    .consultation-form .form-button button{
         width: 70vw;
     }
 
-    .consultation-form-inputs .captcha-input{
+    .consultation-form .captcha-container{
         width: 70vw;
     }
 
-     .consultation-form-inputs .captcha{
+    .consultation-form .captcha-container .captcha-input{
+        width: 50vw;
+    }
+
+    .consultation-form .captcha-container .captcha{
         width: 20vw;
+    }   
+
+
+    .consultation-section   .agreement-text
+    .consultation-form-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
     }
 
     .consultation-form-details{
-        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column;
         width: 70vw;
+        height: auto;
+        justify-self: center;
+        align-self: center;
     }
-
-    .consultation-form-details .appointment-button{
-        width: 70vw;
-        height: 38px;
-        padding: 17px 16px;
+    .consultation-form-details .agreement-text .consultation-form-button{
+        width: 100%;
     }
 
     
+
 }
 
-    @media (max-width: 610px){
+@media (max-width: 610px){
 
-        .nav-buttons .appointment-button {
-            display: none;
-        }
-        .stats-container {
-            animation: marquee-scroll 8s linear infinite;
-        }
-
-        .banner-container{
-            padding: 24px 14px;
-        }
-
-        .banner-image{
-            left: 38vw;
-        }
-
-        .banner-text h1{
-            font-size: 16px;
-        }
-
-        .banner-text p{
-            font-size: 14px;
-        }
-
+    .nav-buttons .appointment-button {
+        display: none;
     }
+    .stats-container {
+        animation: marquee-scroll 8s linear infinite;
+    }
+    .banner-container{
+        padding: 24px 14px;
+    }
+    .banner-image{
+        left: 38vw;
+    }
+    .banner-text h1{
+        font-size: 16px;
+    }
+    .banner-text p{
+        font-size: 14px;
+    }
+
+ }
 
 @media (max-width: 544px){
     .banner-image{
@@ -1104,4 +1113,3 @@ a{
         margin-bottom: 30px;
     }
 }
-
