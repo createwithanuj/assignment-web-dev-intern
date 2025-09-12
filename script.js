@@ -61,18 +61,24 @@ function setCaptcha(form, captchaField, value) {
 }
 
 function validateFields(name, mobile, captcha, checkbox, generatedCaptcha) {
+    
     if (!name || !mobile || !captcha || !checkbox) {
         alert('Please fill all the fields and agree to the terms.');
         return false;
     }
+
     if (!/^[A-Za-z\s]+$/.test(name)) {
         alert('Please enter a valid name (letters and spaces only).');
         return false;
     }
-    if (!/^\d{10}$/.test(mobile)) {
+
+   
+    let normalizedMobile = mobile.replace(/^(\+91|91|0)/, '').replace(/\D/g, '');
+    if (!/^\d{10}$/.test(normalizedMobile)) {
         alert('Please enter a valid 10-digit mobile number.');
         return false;
     }
+
     if (!/^\d+$/.test(captcha) || captcha !== generatedCaptcha) {
         alert('Incorrect captcha. Please try again.');
         return false;
