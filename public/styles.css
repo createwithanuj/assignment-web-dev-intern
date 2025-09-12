@@ -982,7 +982,7 @@ a{
     .consultation-section   .agreement-text
     .consultation-form-details{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 4px;
     }
