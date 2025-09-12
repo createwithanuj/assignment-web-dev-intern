@@ -14,7 +14,7 @@
                     <div class="logo"><img src="public/clove logo.svg"/></div>
                     <div class="nav-buttons">
                         <button class="nav-button appointment-button"><img src="public/Book an appointment.png" />Book Appointment</button>
-                        <button class="nav-button callback-button"><img src="public/Get a Call Back.png" />985-6589-510</button>
+                        <button class="nav-button callback-button" id="callbackButton"><img src="public/Get a Call Back.png" />985-6589-510</button>
                     </div>
                 </div>
             </nav>
@@ -33,33 +33,35 @@
 
                         <p>Expert RCT. Zero Pain. Right Here in Delhi.</p>
                     </div>
-                    <button class="appointment-button"><img src="public/Book an appointment.png" />Book Appointment</button>
+                    <button class="appointment-button" id="appointmentButton"><img src="public/Book an appointment.png" />Book Appointment</button>
                 </div>
 
              </section>
 
 
             <section class="appointment-section1">
+                <form class="appointment-form">
                 <div class="appointment-form">
                     <div class="form-text">
                         <h2>Get Expert Dental Guidance in Delhi</h2>
                         <p>Book your free consultation today and take the first step towards a healthy, beautiful teeth.</p>
                     </div>
                     <div class="form-input">
-                            <input type="text" placeholder="Name" />
-                            <input type="text" placeholder="Mobile Number" />
-                            <div class="captcha-container"><input type="text" placeholder="Captcha" class="captcha-input"/><span class="captcha">1456</span></div>
+                            <input type="text" placeholder="Name" name="name" autocomplete="name"/>
+                            <input type="text" placeholder="Mobile Number" name="mobile" autocomplete="tel"/>
+                            <div class="captcha-container"><input type="text" placeholder="Captcha" class="captcha-input" name="captcha" autocomplete="off"/><span class="captcha">1456</span></div>
                         <div class="form-agreement">
-                            <input type="checkbox"/>
+                            <input type="checkbox" name="checkbox"/>
                             <span>
                                 I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a> and consent to contact via phone, email, or SMS.
                             </span>
                         </div>
                         <div class="form-button">
-                            <button class="appointment-button">Book a Free Consultation</button>
+                            <button class="appointment-button" type="submit">Book a Free Consultation</button>
                         </div>
                     </div>
                 </div>
+                </form>
             </section>
             
          </section>
@@ -310,27 +312,29 @@
         </section>
 
         <section class="appointment-section2">
+            <form class="appointment-form">
                 <div class="appointment-form">
                     <div class="form-text">
                         <h2>Get Expert Dental Guidance in Delhi</h2>
                         <p>Book your free consultation today and take the first step towards a healthy, beautiful teeth.</p>
                     </div>
                     <div class="form-input">
-                            <input type="text" placeholder="Name" />
-                            <input type="text" placeholder="Mobile Number" />
-                            <div class="captcha-container"><input type="text" placeholder="Captcha" class="captcha-input"/><span class="captcha">1456</span></div>
+                            <input type="text" placeholder="Name" name="name" autocomplete="name"/>
+                            <input type="text" placeholder="Mobile Number" name="mobile" autocomplete="tel"/>
+                            <div class="captcha-container"><input type="text" placeholder="Captcha" class="captcha-input" name="captcha" autocomplete="off"/><span class="captcha">1456</span></div>
                         <div class="form-agreement">
-                            <input type="checkbox"/>
+                            <input type="checkbox" name="checkbox"/>
                             <span>
                                 I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a> and consent to contact via phone, email, or SMS.
                             </span>
                         </div>
                         <div class="form-button">
-                            <button class="appointment-button">Book a Free Consultation</button>
+                            <button class="appointment-button" type="submit">Book a Free Consultation</button>
                         </div>
                     </div>
                 </div>
-            </section>
+            </form>
+        </section>
 
         <main>
             <section class="root-canal-section">
@@ -371,7 +375,7 @@
                                 <p>₹ 9,999</p>
                             </div>
                             <div class="price-button">
-                                <button>Get Free Consultation</button>
+                                <button class="appointment-button">Get Free Consultation</button>
                             </div>
                         </div>  
                         
@@ -407,7 +411,7 @@
                                 <p>₹ 19,999</p>
                             </div>
                             <div class="price-button">
-                                <button>Get Free Consultation</button>
+                                <button class="appointment-button">Get Free Consultation</button>
                             </div>
                             
                         </div>
@@ -617,35 +621,36 @@
 
         </section>
 
-        <section class="consultation-section">
-
+        <section class="consultation-section" id="consultationSection">
+            <form class="appointment-form">
             <div class="section-header">
                 <h2>Book an Appointment With Clove Dentist in Delhi</h2>
             </div>
 
             <div class="consultation-form">
+                
                 <div class="consultation-form-inputs">
 
-                    <input type="text" placeholder="Name" class="consultation-form-input"/>
+                    <input type="text" placeholder="Name" class="consultation-form-input" name="name" autocomplete="name"/>
+                    <input type="text" placeholder="Mobile Number" class="consultation-form-input" name="mobile" autocomplete="tel"/>
 
-                    <input type="text" placeholder="Mobile Number" class="consultation-form-input"/>
-
-                    <div class="captcha-container"><input type="text" placeholder="Captcha" class="captcha-input"/><span class="captcha">1456</span></div>
+                    <div class="captcha-container"><input type="text" placeholder="Captcha" class="captcha-input" name="captcha" autocomplete="off"/><span class="captcha">1456</span></div>
 
                 </div>
             </div>
 
             <div class="consultation-form-details">
                 <div class="consultation-form-agreement">
-                    <input type="checkbox"/>
+                    <input type="checkbox" name="checkbox"/>
                     <span class="agreement-text">
                      I agree to CLOVE Dental’s <a href="#">Terms</a> and <a href="#">Privacy Policy</a> and consent to contact via phone, email, or SMS.
                     </span>
                 </div>
-                
-                <button class="appointment-button">Book a Free Consultation</button>
+                <div class="consultation-form-button">
+                    <button class="appointment-button" type="submit">Book a Free Consultation</button>
+                </div>
             </div>
-            
+            </form>
         </section>
 
         </main>
@@ -680,5 +685,8 @@
                 </div>
             </div>
         </footer>
+
+        <script src="script.js"></script>
+
     </body>
 </html>

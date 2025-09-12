@@ -647,6 +647,7 @@ main{
 
 .consultation-section{
     width: 92.67vw;
+    height: auto;
     border-radius: var(--border-radius-card);
     height: auto;
     display: flex;
@@ -713,7 +714,7 @@ main{
 }
 
 .captcha-input{
-    width: 21.25vw; /* 306px / 1440px = 0.2125 */
+    width: 21.25vw;
     height: 38px;
     padding: 17px 16px;
     border-radius: 24px 0 0 24px !important;
@@ -939,6 +940,17 @@ a{
 
 
 @media (max-width: 810px){
+    .appointment-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .consultation-section{
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
 
     *{
         line-height: 140%;
@@ -975,10 +987,7 @@ a{
         padding: 17px 16px;
     }
 
-    .consultation-form-details{
-        margin-top: -10px;
-        margin-bottom: 10px;
-    }
+    
 }
 
     @media (max-width: 610px){
